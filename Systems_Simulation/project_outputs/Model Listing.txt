@@ -1,0 +1,63 @@
+0$            CREATE,        1:NORMAL(5,1):NEXT(2$);                            # Engineering students
+
+2$            ASSIGN:        service_time=UNIFORM(2,7):
+                             payment_type=DP(3):
+                             status=1:
+                             student_type=1:
+                             Priority=1;
+4$            QUEUE,         service_queue:MARK(EQT);
+5$            SEIZE,         2,Other:
+                             food_server,1:NEXT(18$);
+
+18$           TALLY:         1,INT(EQT),1;
+6$            DELAY:         service_time,student_type,Other:NEXT(7$);
+
+7$            RELEASE:       food_server,1;
+8$            QUEUE,         cashier_queue;
+9$            SEIZE,         1,Other:
+                             cashier,1:NEXT(10$);
+
+10$           DELAY:         UN(A(2)),,Other:NEXT(20$);                         # For regular students, payment time is either U(1,2) or U(2,6) if the second attribute is 1 or 2 respectively; for students who forgot their drinks, their second attribute is set as 5. So their payment time is U(1,1) which is 1 minute.
+
+20$           RELEASE:       cashier,1;
+11$           BRANCH,        1:
+                             If,status==1,continue,No:
+                             If,status==2,dispose,No;                           # If a student has already forgot their drink, go to dispose. If not, continue.
+continue      BRANCH,        1:
+                             With,0.75,dispose,No:
+                             With,0.25,back,No;
+dispose       DISPOSE:       No;
+
+back          ASSIGN:        payment_type=DP(4):
+                             status=2;                                          # Assign a new payment time to the returning student and change its status as returning student
+19$           BRANCH,        1:
+                             If,student_type==1,counter1,No:
+                             If,student_type==2,counter2,No;
+counter1      COUNT:         1,1:NEXT(bo);
+
+bo            DELAY:         0.5,,Other:NEXT(8$);
+
+counter2      COUNT:         2,1:NEXT(bo);
+
+
+1$            CREATE,        1:EXPONENTIAL(4):NEXT(3$);                         # Social sciences students
+
+3$            ASSIGN:        service_time=EXPONENTIAL(5):
+                             payment_type=DP(3):
+                             status=1:
+                             student_type=2:
+                             Priority=1:NEXT(4$);
+
+
+12$           CREATE,        1,180:180:NEXT(13$);                               # Dummy entity for servers' break
+
+13$           ASSIGN:        student_type=3:
+                             Priority=0;
+21$           QUEUE,         dummy_queue;
+14$           SEIZE,         1,Other:
+                             food_server,1:NEXT(15$);
+
+15$           DELAY:         15,student_type,Other:NEXT(16$);
+
+16$           RELEASE:       food_server,1;
+17$           DISPOSE:       No;

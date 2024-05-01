@@ -1,0 +1,202 @@
+
+                                      ARENA Simulation Results
+                               htunc34@hotmail.com - License: STUDENT
+
+                                  Summary for Replication 1 of 4
+
+Project: Unnamed Project                                             Run execution date :12/18/2022
+Analyst: htunc34@hotmail.com                                         Model revision date:12/18/2022
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+timein1stQ                                  15.991     (Insuf)    .00000     47.625        191    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+NSTO(stu1)                                  .83329     (Insuf)    .00000     2.0000     1.0000    
+NSTO(stu2)                                  .97850     (Insuf)    .00000     2.0000     1.0000    
+NSTO(stu3)                                  .06250     (Insuf)    .00000     1.0000     .00000    
+NQ(service_queue)                           6.4676     (Corr)     .00000     20.000     5.0000    
+NQ(cashier_queue)                           9.8216     (Corr)     .00000     22.000     17.000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+ForgotStu1                                       33  Infinite
+ForgotStu2                                       19  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+System.NumberOut                            .00000    
+
+Beginning replication 2 of 4
+
+                                      ARENA Simulation Results
+                               htunc34@hotmail.com - License: STUDENT
+
+                                  Summary for Replication 2 of 4
+
+Project: Unnamed Project                                             Run execution date :12/18/2022
+Analyst: htunc34@hotmail.com                                         Model revision date:12/18/2022
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+timein1stQ                                  29.315     (Insuf)    .00000     60.233        203    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+NSTO(stu1)                                  .81525     (Insuf)    .00000     2.0000     1.0000    
+NSTO(stu2)                                  1.1222     (Insuf)    .00000     2.0000     1.0000    
+NSTO(stu3)                                  .06250     (Insuf)    .00000     1.0000     .00000    
+NQ(service_queue)                           13.930     (Corr)     .00000     30.000     27.000    
+NQ(cashier_queue)                           6.5577     (Corr)     .00000     17.000     17.000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+ForgotStu1                                       26  Infinite
+ForgotStu2                                       22  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+System.NumberOut                            .00000    
+
+Beginning replication 3 of 4
+
+                                      ARENA Simulation Results
+                               htunc34@hotmail.com - License: STUDENT
+
+                                  Summary for Replication 3 of 4
+
+Project: Unnamed Project                                             Run execution date :12/18/2022
+Analyst: htunc34@hotmail.com                                         Model revision date:12/18/2022
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+timein1stQ                                  39.172     (Insuf)    .00000     78.878        185    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+NSTO(stu1)                                  .79782     (Insuf)    .00000     2.0000     .00000    
+NSTO(stu2)                                  1.1265     (Insuf)    .00000     2.0000     2.0000    
+NSTO(stu3)                                  .06250     (Insuf)    .00000     1.0000     .00000    
+NQ(service_queue)                           18.677     (Corr)     .00000     42.000     40.000    
+NQ(cashier_queue)                           2.5283     (Corr)     .00000     9.0000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+ForgotStu1                                       21  Infinite
+ForgotStu2                                       25  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+System.NumberOut                            .00000    
+
+Beginning replication 4 of 4
+
+                                      ARENA Simulation Results
+                               htunc34@hotmail.com - License: STUDENT
+
+                                  Summary for Replication 4 of 4
+
+Project: Unnamed Project                                             Run execution date :12/18/2022
+Analyst: htunc34@hotmail.com                                         Model revision date:12/18/2022
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+timein1stQ                                  34.911     (Insuf)    .00000     61.075        203    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+NSTO(stu1)                                  .82639     (Insuf)    .00000     2.0000     1.0000    
+NSTO(stu2)                                  1.1003     (Insuf)    .00000     2.0000     1.0000    
+NSTO(stu3)                                  .06250     (Insuf)    .00000     1.0000     .00000    
+NQ(service_queue)                           15.889     (Corr)     .00000     28.000     20.000    
+NQ(cashier_queue)                           4.5994     (Corr)     .00000     14.000     5.0000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+ForgotStu1                                       16  Infinite
+ForgotStu2                                       28  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+System.NumberOut                            .00000    
+
+
+                                      ARENA Simulation Results
+                               htunc34@hotmail.com - License: STUDENT
+
+                                  Output Summary for 4 Replications
+
+Project: Unnamed Project                                             Run execution date :12/18/2022
+Analyst: htunc34@hotmail.com                                         Model revision date:12/18/2022
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+System.NumberOut                            .00000     .00000     .00000     .00000     4
+
+Simulation run time: 0.12 minutes.
+Simulation run complete.

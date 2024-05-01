@@ -1,0 +1,38 @@
+PROJECT,      "Unnamed Project","htunc34@hotmail.com",,,No,Yes,Yes,Yes,No,No,No,No,No,No;
+
+ATTRIBUTES:   1,service_time,DATATYPE(Real):
+              2,status,DATATYPE(Real):
+              3,payment_type,DATATYPE(Real):
+              4,student_type,DATATYPE(Real):
+              5,priority,DATATYPE(Real):
+              6,EQT,DATATYPE(Real);
+
+PARAMETERS:   1,credit payment,1,2:
+              2,cash payment,2,6:
+              3,payment,0.6,1,1.0,2:
+              4,back_payment,1.0,5:
+              5,payment1min,1,1;
+
+STORAGES:     1,stu1:
+              2,stu2:
+              3,stu3;
+
+QUEUES:       cashier_queue,FirstInFirstOut,,AUTOSTATS(No,,):
+              service_queue,FirstInFirstOut,,AUTOSTATS(No,,):
+              dummy_queue,FirstInFirstOut,,AUTOSTATS(No,,);
+
+RESOURCES:    food_server,Capacity(2),,Stationary,COST(0.0,0.0,0.0),,AUTOSTATS(No,,):
+              cashier,Capacity(1),,Stationary,COST(0.0,0.0,0.0),,AUTOSTATS(No,,);
+
+COUNTERS:     1,ForgotStu1,,Replicate:
+              2,ForgotStu2,,Replicate;
+
+TALLIES:      1,timein1stQ;
+
+DSTATS:       1,NSTO(stu1):
+              2,NSTO(stu2):
+              3,NSTO(stu3):
+              4,NQ(service_queue):
+              5,NQ(cashier_queue);
+
+REPLICATE,    4,0.0,480,Yes,Yes,0.0,,,24.0,Minutes,No,No,,,No,No;
