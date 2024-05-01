@@ -1,0 +1,131 @@
+
+--- Job Assignment_1_a.gms Start 12/29/21 21:06:31 37.1.0 r07954d5 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    D:\DESKTOP\37\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\Administrator\Documents\gamsdir\projdir\Assignment_1_a.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\Users\Administrator\Documents\gamsdir\projdir\225a\
+    SysDir D:\DESKTOP\37\
+    WorkDir C:\Users\Administrator\Documents\gamsdir\projdir\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+Licensee: GAMS Demo license for Melis Tuncer             G211223|0002CO-GEN
+          Bogazici University, Turkey                              DL056714
+          C:\Users\Administrator\Documents\GAMS\gamslice.txt
+          melistuncer7@hotmail.com, Melis Tuncer                           
+          Demo license for demonstration and instructional purposes only
+Processor information: 1 socket(s), 4 core(s), and 8 thread(s) available
+GAMS 37.1.0   Copyright (C) 1987-2021 GAMS Development. All rights reserved
+--- Starting compilation
+--- Assignment_1_a.gms(42) 3 Mb
+--- Starting execution: elapsed 0:00:00.114
+--- Assignment_1_a.gms(40) 4 Mb
+--- Generating LP model assignment1a
+--- Assignment_1_a.gms(42) 4 Mb
+---   11 rows  25 columns  69 non-zeroes
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.180
+
+IBM ILOG CPLEX   37.1.0 r07954d5 Released Nov 11, 2021 WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+
+Reading parameter(s) from "C:\Users\Administrator\Documents\gamsdir\projdir\cplex.opt"
+>>  objrng=all
+>>  rhsrng=all
+Finished reading from "C:\Users\Administrator\Documents\gamsdir\projdir\cplex.opt"
+
+--- GMO setup time: 0.00s
+--- GMO memory 0.50 Mb (peak 0.50 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 20.1.0.1 link memory 0.00 Mb (peak 0.00 Mb)
+--- Starting Cplex
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 0
+CPXPARAM_Simplex_Display                         2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 0 rows and 1 columns.
+Reduced LP has 10 rows, 24 columns, and 48 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Initializing dual steep norms . . .
+
+Iteration      Dual Objective            In Variable           Out Variable
+     1            1750.000000                 x(3,5)        demand(5) slack
+     2            2950.000000                 x(3,2)        demand(2) slack
+     3            4300.000000                 x(2,1)        demand(1) slack
+     4            5340.000000                 x(3,3)        demand(3) slack
+     5            5555.000000                 x(2,3)             x(3,Dummy)
+     6            5555.000000                 x(4,5)             x(2,Dummy)
+     7            6395.000000                 x(4,4)        demand(4) slack
+     8            6520.000000                 x(1,2)             x(4,Dummy)
+     9            6520.000000                 x(1,4)                 x(3,2)
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.00sec (det. 0.03 ticks)
+
+--- Start ranging / sensitivity analysis...
+--- Right-hand-side ranging...
+
+EQUATION NAME                            LOWER           CURRENT             UPPER
+-------------                            -----           -------             -----
+cost                                      -INF                NA              +INF   
+supply(1)                                  290               290              +INF   
+supply(2)                                  220               220               270   
+supply(3)                                  180               180               230   
+supply(4)                                  280               280               330   
+demand(1)                                  130               180               180   
+demand(2)                                    0               200               200   
+demand(3)                                  110               160               160   
+demand(4)                                   90               140               140   
+demand(5)                                  200               250               250   
+demand(Dummy)                             -INF                40                40   
+
+--- Objective ranging...
+
+VARIABLE NAME                            LOWER           CURRENT             UPPER
+-------------                            -----           -------             -----
+x(1.1)                                       8               8.5              +INF   
+x(1.2)                                       0                 7                 7   
+x(1.3)                                     7.5                 8              +INF   
+x(1.4)                                     6.5               6.5                 7   
+x(1.5)                                       8                 9              +INF   
+x(1.Dummy)                                -INF                 0                 0   
+x(2.1)                                    -0.5               7.5                 8   
+x(2.2)                                     6.5                 8              +INF   
+x(2.3)                                     6.5                 7               7.5   
+x(2.4)                                       6                10              +INF   
+x(2.5)                                     7.5               8.5              +INF   
+x(2.Dummy)                                -0.5                 0              +INF   
+x(3.1)                                       7                11              +INF   
+x(3.2)                                       6                 6              +INF   
+x(3.3)                                       6               6.5                 7   
+x(3.4)                                     5.5                 8              +INF   
+x(3.5)                                     6.5                 7                 7   
+x(3.Dummy)                                  -1                 0              +INF   
+x(4.1)                                     7.5                 9              +INF   
+x(4.2)                                     6.5                 7              +INF   
+x(4.3)                                       7                12              +INF   
+x(4.4)                                     5.5                 6                 6   
+x(4.5)                                     7.5               7.5                 8   
+x(4.Dummy)                                -0.5                 0              +INF   
+z                                         -INF                NA              +INF   
+
+
+Optimal solution found
+Objective:         6520.000000
+
+--- Reading solution for model assignment1a
+--- Executing after solve: elapsed 0:00:00.465
+*** Status: Normal completion
+--- Job Assignment_1_a.gms Stop 12/29/21 21:06:32 elapsed 0:00:00.466
