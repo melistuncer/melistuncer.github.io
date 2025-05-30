@@ -1,6 +1,11 @@
 # Welcome to Melis Tuncer's Personal Journal
 This is my personal journal website created for presenting my projects.
 
+## Optimizing Bidding Strategies in Turkish Electricity Markets | Final Project (2024)
+This study investigates optimal bidding strategies for renewable energy producers participating in the Day-Ahead and Intraday electricity markets in Turkey. Given the practical time limit, the study focuses on creating and comparing various industrial engineering approaches to determine the optimal allocation of electricity production between two markets. By analyzing two years of historical market data, the study employs predictive algorithms to solve the established linear deterministic model. The study also provides a scenario-based stochastic approach aiming to incorporate market dynamics and the risks associated with them better.
+* [See the project report here](Optimizing_Bidding_Strategies_for_Renewable_Energy_Portfolio_Management_in_Electricity_Markets.pdf).
+
+
 ## Computer Game Creation | Object-Oriented Programming, Python (2021)
 This project aims to create a computer game from scratch using object-oriented programming in Python. With my project team, we made a game in which the player shifts right or left while the car is moving on its way. On the way, the player encounters some obstacles that need to be avoided and some boosters that need to be caught. As time passes, the car accelerates and the function of the buttons changes at random moments.
 
